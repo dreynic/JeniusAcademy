@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Page</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/styleLearn.css">
+    <script src="/js/learn.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul class="sidebar">
+                    <li class="close_menu_button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/learn.html">Learn</a></li>
+                    <li><a href="/subscription.html">Subscribe</a></li>
+                    <li><a href="/testimony.html">Testimony</a></li>
+                    <li><a href="/register.html" class="register">Register</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/home.html" class="logo">JeniusAcademy</a></li>
+                    <li class="hideOnMobile"><a href="/home.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="/learn.html">Learn</a></li>
+                    <li class="hideOnMobile"><a href="/subscription.html">Subscribe</a></li>
+                    <li class="hideOnMobile"><a href="/testimony.html">Testimony</a></li>
+                    <li class="hideOnMobile"><a href="/register.html" class="register">Register</a></li>
+                    <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- LEARN SECTION -->
+        <div class="learn_container">
+            <div class="learn_frame">
+                <h1>Choose your grade</h1>
+                <div class="learn_nav">
+                    <div class="learn_menu">
+                        <div class="nav-learning" onclick="showMenu('menu1')">Elementary<br>School</div>
+                        <div class="nav-learning" onclick="showMenu('menu2')">Junior<br>High School</div>
+                        <div class="nav-learning" onclick="showMenu('menu3')">Senior<br>High School</div>
+                        <div class="nav-learning" onclick="showMenu('menu4')">College<br>Preparation</div>
+                    </div>
+                </div>
+                <div class="learning">
+                    <div class="learning_menu" id="menu1">
+                        <h3>Elementary School</h3>
+                        
+                        <div class="subject_container">
+                            <div class="frame" onclick="showSubject('math-elem')">
+                                <img src="/assets/math.jpg" alt="">
+                                <h4>Mathematics</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Jason</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('english-elem')">
+                                <img src="/assets/english.jpg" alt="">
+                                <h4>English</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Andy</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('science-elem')">
+                                <img src="/assets/science.jpg" alt="">
+                                <h4>Science</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Lily</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('social-elem')">
+                                <img src="/assets/social.jpg" alt="">
+                                <h4>Social Studies</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Hilda</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="learning_menu" id="menu2">
+                        <h3>Junior High School</h3>
+                        <div class="subject_container">
+                            <div class="frame" onclick="showSubject('math-jhs')">
+                                <img src="/assets/math.jpg" alt="">
+                                <h4>Mathematics</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Aldi</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('english-jhs')">
+                                <img src="/assets/english.jpg" alt="">
+                                <h4>English</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Grace</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('science-jhs')">
+                                <img src="/assets/science.jpg" alt="">
+                                <h4>Science</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Percy</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('social-jhs')">
+                                <img src="/assets/social.jpg" alt="">
+                                <h4>Social Studies</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Abigail</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learning_menu" id="menu3">
+                        <h3>Senior High School</h3>
+                        <div class="subject_container">
+                            <div class="frame" onclick="showSubject('math-shs')">
+                                <img src="/assets/math.jpg" alt="">
+                                <h4>Mathematics</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Jason</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('math-2-shs')">
+                                <img src="/assets/math-2.jpg" alt="">
+                                <h4>Advanced Math</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Kevin</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('english-shs')">
+                                <img src="/assets/english.jpg" alt="">
+                                <h4>English</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Lily</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('chinese-shs')">
+                                <img src="/assets/chinese.jpg" alt="">
+                                <h4>Chinese Literature</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Laoshi Elaine</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('biology-shs')">
+                                <img src="/assets/biology.png" alt="">
+                                <h4>Biology</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Ella</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('physics-shs')">
+                                <img src="/assets/physics.jpg" alt="">
+                                <h4>Physics</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Bryan</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('chemistry-shs')">
+                                <img src="/assets/chemistry.png" alt="">
+                                <h4>Chemistry</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Eli</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('economy-shs')">
+                                <img src="/assets/economy.jpg" alt="">
+                                <h4>Economy</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Ria</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learning_menu" id="menu4">
+                        <h3>College Preparation</h3>
+                        <div class="subject_container">
+                            <div class="frame" onclick="showSubject('math-coll')">
+                                <img src="/assets/math.jpg" alt="">
+                                <h4>Mathematics</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Vidi</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('english-coll')">
+                                <img src="/assets/english.jpg" alt="">
+                                <h4>English</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Putri</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('science-coll')">
+                                <img src="/assets/science.jpg" alt="">
+                                <h4>Science</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Mr. Raymond</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                            <div class="frame" onclick="showSubject('social-coll')">
+                                <img src="/assets/social.jpg" alt="">
+                                <h4>Social Studies</h4>
+                                <div class="subject_info">
+                                    <img src="/assets/teacher.svg" alt="">
+                                    <p>Ms. Stephanie</p>
+                                </div>
+                                <div class="subject_info">
+                                    <img src="/assets/course.svg" alt="">
+                                    <p>10 courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="subject-option">
+                    <!-- ELEMENTARY SCHOOL -->
+                    <div class="subject" id="math-elem">
+                        <h3>Mathematics</h3>
+                        <h4>Fraction for Elementary School</h4>
+                        <p class="subject_teacher">Teacher : Mr. Jason</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/p33BYf1NDAE?si=x7mZ8BRHwctys3ZG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="english-elem">
+                        <h3>English</h3>
+                        <h4>Alphabets in English</h4>
+                        <p class="subject_teacher">Teacher : Mr. Andy</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/7jfAGUoPXMs?list=PLVG8tGc7EksawGCL1geLbLOuQPQxmx8LL" title="Year 1 English, Lesson 2, Alphabets and Phonetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="science-elem">
+                        <h3>Science</h3>
+                        <h4>Introduction to Science</h4>
+                        <p class="subject_teacher">Teacher : Ms. Lily</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/NYQl9-5FpQM" title="Intro to Cool Science Experiments | Nat Geo Kids Cool Science Experiments Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="social-elem">
+                        <h3>Social</h3>
+                        <h4>Continents of the World</h4>
+                        <p class="subject_teacher">Teacher : Ms. Hilda</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/YrT5jcnu8NA?si=MtqFIYwj7KXWpzSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+
+                    <!-- JUNIOR HIGH SCHOOL -->
+                    <div class="subject" id="math-jhs">
+                        <h3>Mathematics</h3>
+                        <h4>What is Algebra?</h4>
+                        <p class="subject_teacher">Teacher : Mr. Aldi</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/NybHckSEQBI?si=1qWCvKygr-q47SyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="english-jhs">
+                        <h3>English</h3>
+                        <h4>Reading Session</h4>
+                        <p class="subject_teacher">Teacher : Ms. Grace</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/H7sKuGHiZ9s?si=LYlZp7wtLymhTA-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="science-jhs">
+                        <h3>Science</h3>
+                        <h4>Nutrients in Plants</h4>
+                        <p class="subject_teacher">Teacher : Mr. Percy</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/aaHghmgGZFk?si=Fwbix3P1WVr-I9oB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="social-jhs">
+                        <h3>Social Studies</h3>
+                        <h4>History of Babur</h4>
+                        <p class="subject_teacher">Teacher : Ms. Abigail</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/BTUfu87DI7Y?si=LyoUx8__GXCqEBtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+
+                    <!-- SENIOR HIGH SCHOOL -->
+                    <div class="subject" id="math-shs">
+                        <h3>Mathematics</h3>
+                        <h4>Polynomials</h4>
+                        <p class="subject_teacher">Teacher : Mr. Jason</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/OnbcKzlWNeE?si=Aw6USRuLiZKvJ7lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="math-2-shs">
+                        <h3>Advanced Math</h3>
+                        <h4>Introduction to Integral</h4>
+                        <p class="subject_teacher">Teacher : Mr. Kevin</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/__Uw1SXPW7s?si=3PEPfuKskbeM6UAX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="english-shs">
+                        <h3>English</h3>
+                        <h4>Engish Tenses</h4>
+                        <p class="subject_teacher">Teacher : Ms. Lily</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/sCiG6rlk2Bc?si=tojQ_qfuSFjKdR2G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="chinese-shs">
+                        <h3>Chinese Literature</h3>
+                        <h4>Top 20 Chinese Characters for Beginners</h4>
+                        <p class="subject_teacher">Teacher : Laoshi Elaine</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/MTVgHs-Tc5U?si=Ss6UEBflm5cdlXaL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="biology-shs">
+                        <h3>Biology</h3>
+                        <h4>The Living World</h4>
+                        <p class="subject_teacher">Teacher : Ms. Ella</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/HWVbdS1_RYw?si=0WtYri2zkzb2xOaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="physics-shs">
+                        <h3>Physics</h3>
+                        <h4>Unit and Measurements</h4>
+                        <p class="subject_teacher">Teacher : Mr. Bryan</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/I8U2J0yjS8c?si=E5i48a5vx1aWXu6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="chemistry-shs">
+                        <h3>Chemistry</h3>
+                        <h4>Chemical Reactions and Equations</h4>
+                        <p class="subject_teacher">Teacher : Ms. Eli</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/Hxd1TNgSuPg?si=_j87yN2qPpkPZEtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="economy-shs">
+                        <h3>Economy</h3>
+                        <h4>Development</h4>
+                        <p class="subject_teacher">Teacher : Ms. Ria</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/oF2XxhMtGsA?si=1bKAH8VtjCkh1rB2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+
+                    <!-- COLLEGE PREPARATION -->
+                    <div class="subject" id="math-coll">
+                        <h3>Mathematics</h3>
+                        <h4>Solving Equations for a Variable</h4>
+                        <p class="subject_teacher">Teacher : Mr. Vidi</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/wVWQWEta1rE?list=PLbINtLDwM0VQLZqFHEx9YRBFfRJ0yZAqL" title="Solving Equations for a Variable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="english-coll">
+                        <h3>English</h3>
+                        <h4>Expressions and Vocabulary</h4>
+                        <p class="subject_teacher">Teacher : Ms. Putri</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/oqNOD2tF9Ec" title="University English: Expressions and Vocabulary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="science-coll">
+                        <h3>Science</h3>
+                        <h4>Anatomy and Physiology</h4>
+                        <p class="subject_teacher">Teacher : Mr. Raymond</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/eY7zBOl68CE" title="College Prep Science Anatomy and Physiology by Greg Landry" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+                    <div class="subject" id="social-coll">
+                        <h3>Social Studies</h3>
+                        <h4>Marginal and Average Tax Rates</h4>
+                        <p class="subject_teacher">Teacher : Ms. Stephanie</p>
+                        <div class="video_container">
+                            <iframe class="video" src="https://www.youtube.com/embed/I9HLr5lMF5U" title="Marginal and average tax rates - example calculation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="learning_objective">
+                            <p>Learning Objective:</p>
+                            <li>Develop a solid understanding of fundamental mathematical concepts, including arithmetic, algebra, and geometry.</li>
+                            <li>Enhance problem-solving skills through practical application of mathematical principles in various real-world scenarios.</li>
+                            <li>Gain proficiency in mathematical reasoning and analytical thinking, preparing students for advanced mathematical studies or professional fields that require quantitative skills.</li>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+        </div>
+
+        <!-- LEARN SECTION END -->
+
+        <footer>
+            <div class="footer_container">
+                    <div class="footer_column">
+                        <div class="footer_logo">
+                            JeniusAcademy
+                        </div>
+        
+                        <div class="footer_about_us">
+                            We're passionate about making learning accessible to everyone. Our team is dedicated to offering top-notch courses and personalized support to help you succeed. Join our community and start your learning journey today!
+                        </div>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title learn">Learn</div>
+                        <ul>
+                            <li><a href="#">Elementary School</a></li>
+                            <li><a href="#">Junior High School</a></li>
+                            <li><a href="#">Senior High School</a></li>
+                            <li><a href="#">College Preparation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title subs">Subscription</div>
+                        <ul>
+                            <li><a href="#">Basic Package</a></li>
+                            <li><a href="#">Student Package</a></li>
+                            <li><a href="#">Premium Package</a></li>
+                            <li><a href="#">Team Package</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title contact">Contact Us</div>
+                        <ul>
+                            <li>info@jeniusacademy.com</li>
+                            <li>+62 8111 2222 3333</li>
+                        </ul>
+                    </div>
+                    <div class="footer_bottom">
+                        <h3>© 2024 Jenius Academy. All rights reserved.</h3>
+                    </div>
+                </div>
+               
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

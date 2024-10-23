@@ -1,0 +1,380 @@
+:root {
+    --color-white: white;
+    --color-gray: #F5F5F5;
+    --color-blue-1: #0077ff;
+    --color-blue-2: #005CC4;
+    --color-dark-gray: #333333;
+    --color-black: black;
+}
+
+@font-face {
+    font-family: 'Nunito Sans-Regular';
+    src: url("/Font/NunitoSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'Nunito Sans-Black';
+    src: url("/Font/NunitoSans-Black.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans-Regular';
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-white);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================================================== */
+/* HEADER */
+
+nav {
+    background-color: var(--color-blue-1);
+    padding: 10px 10%;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav a:hover {
+    color: var(--color-black);
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--color-blue-1);
+    backdrop-filter: blur(10px);
+    box-shadow: -1px 0 3px var(--color-blue-2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu_button {
+    display: none;
+}
+.logo {
+    font-size: 1.3rem;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: 'Nunito Sans-Black';
+    text-align: left;
+}
+
+/* ================================================================== */
+/* FOOTER */
+
+footer {
+    /* position: relative; */
+    width: 100%;
+    background-color: var(--color-blue-1);
+}
+.footer_container {
+    padding: 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color: #F5F5F5;
+    width: 100%;
+}
+.footer_column {
+    padding: 20px;
+    flex: 1;
+    min-width: 200px; /* Ensures a minimum width for columns */
+    margin: 10px;
+}
+.footer_logo {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-family: 'Nunito Sans-Black';
+}
+.footer_about_us {
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.footer_title {
+    font-size: 1.1rem;
+    color: var(--color-white);
+    font-family: 'Nunito Sans-Regular';
+    font-weight: 900;
+}
+.footer_column ul {
+    padding-top: 10px;
+}
+.footer_column ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.footer_column ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+.footer_bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* ============================================================================================= */
+/* LEARN SECTION */
+
+.learn_container {
+    background: var(--color-gray);
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    height: fit-content;
+    min-height: 550px;
+}
+.learn_frame {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+}
+.learn_frame h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Nunito Sans-Black';
+}
+.learn_menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav-learning {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0.5px 0.5px 4px var(--color-dark-gray);
+}
+.nav-learning:hover {
+    background-color: var(--color-blue-1);
+    color: var(--color-white);
+    transform: scale(1.1);
+}
+.learning_menu {
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.learning_menu.active {
+    display: block;
+}
+.learning_menu h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans-Black';
+}
+.learning {
+    height: auto;
+}
+.subject_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px;
+    width: 200px;
+    height: 250px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 3px var(--color-dark-gray);
+    transition: .3s;
+    cursor: pointer;
+}
+.frame:hover {
+    box-shadow: 2px 2px 8px var(--color-dark-gray);
+}
+.frame img {
+    height: 120px;
+    border-radius: 5px;
+}
+.frame h4 {
+    font-size: 1rem;
+    padding: 10px 0;
+}
+.subject_info {
+    display: flex;
+    margin: 5px 0;
+}
+.subject_info img {
+    height: 17px;
+    border-radius: 2px;
+}
+.subject_info p {
+    padding: 0 10px;
+    font-size: 0.8rem;
+}
+.subject {
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.subject.active {
+    display: block;
+}
+.subject h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.subject h4 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.subject_teacher {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+.video_container {
+    display: flex;
+    justify-content: center;
+}
+.video {
+    width: 600px;
+    height: 300px;
+}
+.learning_objective {
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 50px;
+}
+.learning_objective p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* LEARN SECTION END */
+/* ============================================================================================= */
+
+/* ============================================================================================= */
+/* MEDIA RESPONSIVE */
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 90%;
+    }
+
+
+    .footer_container {
+        padding: 20px 10%; 
+    }
+    .footer_column {
+        flex: 1 1 45%;
+        margin: 10px 5px;
+    }
+    .footer_logo {
+        font-size: 1.3rem;
+    }
+    .footer_title {
+        font-size: 1rem;
+    }
+    .footer_about_us, .footer_column ul li {
+        font-size: 0.7rem;
+    }
+    .footer_bottom {
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    html{
+        font-size: 85%;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+    .menu_button {
+        display: block;
+    }
+
+    .video {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 530px) {
+    
+}
+
+@media (max-width: 430px) {
+
+    .sidebar {
+        width: 100%;
+    }
+}

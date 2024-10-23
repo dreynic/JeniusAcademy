@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/styleHome.css">
+    <script src="/js/home.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul class="sidebar">
+                    <li class="close_menu_button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/learn.html">Learn</a></li>
+                    <li><a href="/subscription.html">Subscribe</a></li>
+                    <li><a href="/testimony.html">Testimony</a></li>
+                    <li><a href="/register.html" class="register">Register</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/home.html" class="logo">JeniusAcademy</a></li>
+                    <li class="hideOnMobile"><a href="/home.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="/learn.html">Learn</a></li>
+                    <li class="hideOnMobile"><a href="/subscription.html">Subscribe</a></li>
+                    <li class="hideOnMobile"><a href="/testimony.html">Testimony</a></li>
+                    <li class="hideOnMobile"><a href="/register.html" class="register">Register</a></li>
+                    <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="home_page_content">
+            <section id="dashboard_section">
+    
+                <div class="dashboard">
+                    <div class="slogan">
+                        <div class="slogan_big_title">Fun Learning <br> Bright Futures</div>
+    
+                        <div class="quotes_1">Discover Boundless Learning <br>
+                            at Jenius Academy
+                        </div>
+    
+                        <a href="/html/learn.html">
+                            <button class="view_course">View Course</button>
+                        </a>
+    
+                    </div>
+    
+                    <div class="dashboard_image">
+                        <img src="/assets/dashboard_image.png" alt="JeniusAcademy" srcset="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="best_selling_section">
+                <div class="best_selling_subscription">
+                    <div class="best_selling_sub_title">Our Best Selling Packages</div>
+                </div>
+
+                <div class="carousel_package">
+                    <a href="/html/subscription.html" class="package">
+                        <div class="best_package_title title_1">Premium</div>
+                        <div class="best_package_slogan slogan_1">Best for professional user</div>
+                        <div class="best_package_price price_1">$24.99/month</div>
+                        <div class="best_package_point_plus point_1">
+                            1. Unilimited access to all courses <br>
+                            2. Forum for QnA with industry experts <br>
+                            3. Tutoring sessions with instructor <br>
+                            4. Personalized progress tracking with AI <br>
+                            5. Certificate for completing courses <br>
+                        </div>
+                    </a>
+                    <a href="/html/subscription.html" class="package">
+                        <div class="best_package_title title_2">Team</div>
+                        <div class="best_package_slogan slogan_2">Best for family/team users</div>
+                        <div class="best_package_price price_2">$39.99/month</div>
+                        <div class="best_package_point_plus point_2">
+                            1. Unilimited access up to 5 users <br>
+                            2. Forum for QnA with industry experts <br>
+                            3. Team tutoring sessions with instructor <br>
+                            4. Progress tracking for each user <br>
+                            5. Certificate for each user <br>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="other_packages">
+                    <a href="/html/subscription.html">See other packages</a>
+                </div>
+            </section>
+            
+            <section id="about_us_section">
+                <div class="about_us">
+                    <div class="about_us_title">About Us</div>
+                </div>
+
+                <div class="about_us_description">
+                    At Jenius Academy, we believe that education is the cornerstone of every positive change in life. With this deep conviction, we've set an unwavering mission: to make learning more accessible to everyone, wherever they may be. Our dedicated team has poured their hearts and souls into curating a range of high-quality courses spanning various fields, from technology to arts, from business to interpersonal skills. But we don't stop there. We also provide warm and caring personal support, ensuring that every course participant feels supported and guided at every step of their learning journey. Join our passionate community today and experience firsthand how this transformative learning journey can propel you towards your untapped potential!
+                </div>
+            </section>
+
+            <section id="FAQ">
+                <div class="FAQ_title">Frequently Ask Question</div>
+
+                <ul id="question">
+                    <li>
+                        <label for="first">What makes Jenius Academy different from other online learning platforms? <span>&#x3e</span></label>
+                        <input type="checkbox" name="jenius" id="first">
+                        <div class="content">
+                            <p>Jenius Academy stands out for its commitment to personalized support and top-notch courses. We prioritize individual growth and provide tailored assistance to ensure your success. Our vibrant community fosters collaborative learning and continuous improvement.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="second">Are the courses at Jenius Academy suitable for beginners or advanced learners? <span>&#x3e</span></label>
+                        <input type="checkbox" name="jenius" id="second">
+                        <div class="content">
+                            <p>Our courses cater to a wide range of skill levels, from beginners to advanced learners. Each course is carefully designed to accommodate various learning stages, with comprehensive materials and optional advanced modules for those seeking to deepen their knowledge.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="third">How does Jenius Academy ensure the quality of its courses? <span>&#x3e</span></label>
+                        <input type="checkbox" name="jenius" id="third">
+                        <div class="content">
+                            <p>We maintain a rigorous process for course selection and development, collaborating with industry experts and educators to create content that is relevant, up-to-date, and engaging. Regular reviews and updates ensure that our courses meet the highest standards of quality and relevance.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="fourth">What kind of support can I expect as a student of Jenius Academy? <span>&#x3e</span></label>
+                        <input type="checkbox" name="jenius" id="fourth">
+                        <div class="content">
+                            <p>As a student of Jenius Academy, you can expect personalized support every step of the way. Our dedicated team is available to answer your questions, provide feedback on your progress, and offer guidance to help you overcome any challenges you may encounter during your learning journey.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="fifth">Can I interact with other students and instructors at Jenius Academy? <span>&#x3e</span></label>
+                        <input type="checkbox" name="jenius" id="fifth">
+                        <div class="content">
+                            <p>Absolutely! Interactivity is at the heart of Jenius Academy. You'll have the opportunity to engage with fellow students through discussion forums, group projects, and collaborative activities. Our instructors are also accessible for questions, feedback, and guidance, fostering a supportive learning community.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer_container">
+                    <div class="footer_column">
+                        <div class="footer_logo">
+                            JeniusAcademy
+                        </div>
+        
+                        <div class="footer_about_us">
+                            We're passionate about making learning accessible to everyone. Our team is dedicated to offering top-notch courses and personalized support to help you succeed. Join our community and start your learning journey today!
+                        </div>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title learn">Learn</div>
+                        <ul>
+                            <li><a href="#">Elementary School</a></li>
+                            <li><a href="#">Junior High School</a></li>
+                            <li><a href="#">Senior High School</a></li>
+                            <li><a href="#">College Preparation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title subs">Subscription</div>
+                        <ul>
+                            <li><a href="#">Basic Package</a></li>
+                            <li><a href="#">Student Package</a></li>
+                            <li><a href="#">Premium Package</a></li>
+                            <li><a href="#">Team Package</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title contact">Contact Us</div>
+                        <ul>
+                            <li>info@jeniusacademy.com</li>
+                            <li>+62 8111 2222 3333</li>
+                        </ul>
+                    </div>
+                    <div class="footer_bottom">
+                        <h3>© 2024 Jenius Academy. All rights reserved.</h3>
+                    </div>
+                </div>
+               
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

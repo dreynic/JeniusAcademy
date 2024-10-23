@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/styleRegister.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul class="sidebar">
+                    <li class="close_menu_button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/learn.html">Learn</a></li>
+                    <li><a href="/subscription.html">Subscribe</a></li>
+                    <li><a href="/testimony.html">Testimony</a></li>
+                    <li><a href="/register.html" class="register">Register</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/home.html" class="logo">JeniusAcademy</a></li>
+                    <li class="hideOnMobile"><a href="/home.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="/learn.html">Learn</a></li>
+                    <li class="hideOnMobile"><a href="/subscription.html">Subscribe</a></li>
+                    <li class="hideOnMobile"><a href="/testimony.html">Testimony</a></li>
+                    <li class="hideOnMobile"><a href="/register.html" class="register">Register</a></li>
+                    <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="register_container">
+            <div class="register_frame">
+                <div class="register_left_side"></div>
+
+                <div class="register_right_side">
+                    <h1>Register</h1>
+                    <p>make your own account</p>
+
+                    <div class="input_container">
+                        <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                        <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Email" required>
+                        <input type="password" name="Password" id="password" placeholder="Password" required>
+                        <input type="password" name="Password" id="confpass" placeholder="Confirm Password" required>
+                        <input type="button" value="Register" onclick="validateData()" class="submit_button">
+                    </div>
+                </div>
+            </div>
+
+            <div class="register_phone_input">
+                <h1>Register</h1>
+                <p>make your own account</p>
+
+                <div class="input_container">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                    <input type="password" name="Password" id="password" placeholder="Password" required>
+                    <input type="confpass" name="Password" id="confpass" placeholder="Confirm Password" required>
+                    <input type="button" value="Register" onclick="validateData()" class="submit_button">
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer_container">
+                    <div class="footer_column">
+                        <div class="footer_logo">
+                            JeniusAcademy
+                        </div>
+        
+                        <div class="footer_about_us">
+                            We're passionate about making learning accessible to everyone. Our team is dedicated to offering top-notch courses and personalized support to help you succeed. Join our community and start your learning journey today!
+                        </div>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title learn">Learn</div>
+                        <ul>
+                            <li><a href="#">Elementary School</a></li>
+                            <li><a href="#">Junior High School</a></li>
+                            <li><a href="#">Senior High School</a></li>
+                            <li><a href="#">College Preparation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title subs">Subscription</div>
+                        <ul>
+                            <li><a href="#">Basic Package</a></li>
+                            <li><a href="#">Student Package</a></li>
+                            <li><a href="#">Premium Package</a></li>
+                            <li><a href="#">Team Package</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title contact">Contact Us</div>
+                        <ul>
+                            <li>info@jeniusacademy.com</li>
+                            <li>+62 8111 2222 3333</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <h3>© 2024 Jenius Academy. All rights reserved.</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="/js/register.js"></script>
+</body>
+</html>

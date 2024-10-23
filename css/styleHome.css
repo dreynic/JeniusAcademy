@@ -1,0 +1,549 @@
+:root {
+    --color-white: white;
+    --color-gray: #F5F5F5;
+    --color-blue-1: #0077ff;
+    --color-blue-2: #005CC4;
+    --color-dark-gray: #333333;
+    --color-black: black;
+}
+
+@font-face {
+    font-family: 'Nunito Sans-Regular';
+    src: url("/Font/NunitoSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'Nunito Sans-Black';
+    src: url("/Font/NunitoSans-Black.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans-Regular';
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-white);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================================================== */
+/* HEADER */
+
+nav {
+    background-color: var(--color-blue-1);
+    padding: 10px 10%;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav a:hover {
+    color: var(--color-black);
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--color-blue-1);
+    backdrop-filter: blur(10px);
+    box-shadow: -1px 0 3px var(--color-blue-2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu_button {
+    display: none;
+}
+.logo {
+    font-size: 1.3rem;
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: 'Nunito Sans-Black';
+    text-align: left;
+}
+
+/* ================================================================== */
+/* CONTENT */
+
+.home_page_content {
+    width: 100%;
+    padding: 20px 10%;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* DASHBOARD */
+#dashboard_section {
+    margin-bottom: 50px;
+}
+.dashboard {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slogan_big_title {
+    font-family: 'Nunito Sans-Black';
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.quotes_1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.view_course {
+    height: 50px;
+    width: 150px;
+    background-color: var(--color-blue-1);
+    color: var(--color-white);
+    box-shadow: 1px 1px 2px var(--color-dark-gray);
+    transition: .2s;
+    justify-self: center;
+}
+
+.view_course:hover {
+    background-color: var(--color-gray);
+    color: var(--color-blue-1);
+    box-shadow: 1px 1px 2px var(--color-dark-gray);
+}
+
+button {
+    padding: 5px 15px;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: 'Nunito Sans-Regular';
+    font-size: medium;
+    font-weight: 1000;
+    text-decoration: none;
+    color: var(--color-blue-1);
+}
+
+button:hover {
+    background-color: var(--color-gray);
+}
+
+.dashboard_image img {
+    width: auto;
+    height: 300px;
+}
+/* DASHBOARD END */
+
+/* BEST SELLING */
+#best_selling_section {
+    margin-bottom: 50px;
+}
+.best_selling_subscription {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.best_selling_sub_title{
+    font-family: 'Nunito Sans-Black';
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.carousel_package {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.package {
+    width: 375px;
+    height: 290px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+    box-shadow: 1px 1px 5px var(--color-dark-gray);
+    transition: .1s;
+}
+.best_package_title {
+    font-size: 2rem;
+    font-family: 'Nunito Sans-Black';
+    color: var(--color-blue-1);
+    padding-bottom: 10px;
+}
+.best_package_slogan {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+}
+.best_package_price {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color-blue-1);
+    padding-bottom: 10px;
+}
+.best_package_point_plus {
+    font-size: 1rem;
+}
+.package:hover {
+    cursor: pointer;
+    background-color: var(--color-gray);
+    box-shadow: 3px 3px 10px var(--color-dark-gray);
+}
+
+.other_packages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.other_packages a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-black);
+
+    position: relative;
+    transition: .3s;
+}
+.other_packages a::before {
+    content: '';
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: var(--color-blue-2);
+    transition: .3s;
+}
+.other_packages a:hover::before {
+    width: 100%;
+}
+.other_packages a:hover {
+    color: var(--color-blue-1);
+}
+/* BEST SELLING END */
+
+/* ABOUT US */
+#about_us_section {
+    background: var(--color-gray);
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.about_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.about_us_title {
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans-Black';
+}
+.about_us_description {
+    padding: 0 20px 20px 20px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+/* ABOUT US END */
+
+/* FAQ */
+#FAQ {
+    margin-bottom: 50px;
+}
+.FAQ_title {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans-Black';
+    text-align: center;
+}
+
+#question {
+    margin: 20px auto;
+    width: 700px;
+}
+#question li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: var(--color-gray);
+    padding: 10px;
+    border-radius: 5px;
+}
+#question li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-black);
+    cursor: pointer;
+}
+#question li label span {
+    transform: rotate(90deg);
+    font-size: 1rem;
+    color: var(--color-black);
+    font-family:cursive;
+}
+#question label + input[type="checkbox"] {
+    display: none;
+}
+#question .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+#question label + input[type="checkbox"]:checked + .content {
+    max-height: 400px;
+}
+/* FAQ END */
+
+/* ================================================================== */
+/* FOOTER */
+
+footer {
+    /* position: relative; */
+    width: 100%;
+    background-color: var(--color-blue-1);
+}
+.footer_container {
+    padding: 0px 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    color: #F5F5F5;
+    width: 100%;
+}
+.footer_column {
+    padding: 20px;
+    flex: 1;
+    min-width: 200px; /* Ensures a minimum width for columns */
+    margin: 10px;
+}
+.footer_logo {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    font-family: 'Nunito Sans-Black';
+}
+.footer_about_us {
+    padding-top: 10px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.footer_title {
+    font-size: 1.1rem;
+    color: var(--color-white);
+    font-family: 'Nunito Sans-Regular';
+    font-weight: 900;
+}
+.footer_column ul {
+    padding-top: 10px;
+}
+.footer_column ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.footer_column ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    padding-top: 5px;
+}
+.footer_bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* ============================================================================================= */
+/* MEDIA RESPONSIVE */
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 90%;
+    }
+
+    .dashboard_image img{
+        width: 400px;
+        height: auto;
+
+    }
+    .carousel_package {
+        justify-content: space-around;
+    }
+    .package {
+        max-width: 350px;
+    }
+
+    .footer_container {
+        padding: 20px 10%; 
+    }
+
+    .footer_column {
+        flex: 1 1 45%;
+        margin: 10px 5px;
+    }
+
+    .footer_logo {
+        font-size: 1.3rem;
+    }
+
+    .footer_title {
+        font-size: 1rem;
+    }
+
+    .footer_about_us, .footer_column ul li {
+        font-size: 0.7rem;
+    }
+
+    .footer_bottom {
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    html{
+        font-size: 85%;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+    .menu_button {
+        display: block;
+    }
+
+    .dashboard_image img{
+        width: 295px;
+        height: auto;
+    }
+
+    .view_course {
+        width: 120px;
+        height: 50px;
+        font-size: small;
+    }
+    .slogan_big_title {
+        font-size: 2.7rem;
+    }
+    .package {
+        max-width: 310px;
+        margin: 0 10px;
+    }
+    #question {
+        width: 90%;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .slogan_big_title {
+        margin-bottom: 10px;
+    }
+    .quotes_1 {
+        margin-bottom: 10px;
+    }
+    .dashboard_image img{
+        display: none;
+    }
+
+    .carousel_package {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        height: 250px;
+        margin: 10px;
+    }
+
+    .about_us_description {
+        padding: 20px;
+    }
+
+    #question {
+        width: 90%;
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    
+}
+
+@media (max-width: 430px) {
+    .about_us_description {
+        padding: 20px 40px 0 40px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}

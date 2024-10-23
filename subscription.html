@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Page</title>
+    <link rel="icon" href="/assets/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="/css/styleSubscription.css">
+    <script src="/js/subscription.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <ul class="sidebar">
+                    <li class="close_menu_button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/learn.html">Learn</a></li>
+                    <li><a href="/subscription.html">Subscribe</a></li>
+                    <li><a href="/testimony.html">Testimony</a></li>
+                    <li><a href="/register.html" class="register">Register</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/home.html" class="logo">JeniusAcademy</a></li>
+                    <li class="hideOnMobile"><a href="/home.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="/learn.html">Learn</a></li>
+                    <li class="hideOnMobile"><a href="/subscription.html">Subscribe</a></li>
+                    <li class="hideOnMobile"><a href="/testimony.html">Testimony</a></li>
+                    <li class="hideOnMobile"><a href="/register.html" class="register">Register</a></li>
+                    <li class="menu_button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SUBSCRIPTION SECTION -->
+
+        <div class="subscription_container">
+            <div class="subscription_frame">
+                <h2 class="subs_title">Choose your own package</h2>
+                
+                <div class="content_container">
+                    <div class="content_container_2">
+                        <div class="frame">
+                            <div class="feature_container">
+                                <h2>Basic</h2>
+                                <p>Best for first time user</p>
+                                <br>
+                                <h3>$14.99/month</h3>
+                                <br>
+                                <p>Features:</p>
+                                <li>5 courses per month</li>
+                                <li>Read-only forum with experts</li>
+                                <li>1 tutoring session per month</li>
+                            </div>
+                            <button>Learn More</button>
+                        </div>
+                        <div class="frame">
+                            <div class="feature_container">
+                                <h2>Student</h2>
+                                <p>Best for student</p>
+                                <br>
+                                <h3>$10.99/month</h3>
+                                <br>
+                                <p>Features:</p>
+                                <li>5 courses per month</li>
+                                <li>Read-only forum with experts</li>
+                                <li>1 tutoring session per month</li>
+                            </div>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="content_container_2">
+                        <div class="frame">
+                            <div class="feature_container">
+                                <div class="best_choice">
+                                    <h2>Premium</h2>
+                                    <img src="/assets/thumbs-up.svg" alt="">
+                                </div>
+                                <p>Best for professional user</p>
+                                <br>
+                                <h3>$24.99/month</h3>
+                                <br>
+                                <p>Features:</p>
+                                <li>Unlimited access to all courses</li>
+                                <li>QnA forum with communities</li>
+                                <li>5 tutoring sessions per month</li>
+                                <li>Personalized AI progress tracking</li>
+                                <li>Certificate for completing course</li>
+                            </div>
+                            <button>Learn More</button>
+                        </div>
+                        <div class="frame">
+                            <div class="feature_container">
+                                <div class="best_choice">
+                                    <h2>Team</h2>
+                                    <img src="/assets/thumbs-up.svg" alt="">
+                                </div>
+                                <p>Best for many users</p>
+                                <br>
+                                <h3>$39.99/month</h3>
+                                <br>
+                                <p>Features:</p>
+                                <li>Unlimited access up to 5 users</li>
+                                <li>QnA forum with communities</li>
+                                <li>5 tutoring sessions per month</li>
+                                <li>AI progress tracking for each user</li>
+                                <li>Certificate for each user</li>
+                            </div>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="subs_text">Feel free to upgrade anytime soon...</h3>
+            </div>
+        </div>
+
+        <!-- SUBSCRIPTION END -->
+
+        <footer>
+            <div class="footer_container">
+                    <div class="footer_column">
+                        <div class="footer_logo">
+                            JeniusAcademy
+                        </div>
+        
+                        <div class="footer_about_us">
+                            We're passionate about making learning accessible to everyone. Our team is dedicated to offering top-notch courses and personalized support to help you succeed. Join our community and start your learning journey today!
+                        </div>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title learn">Learn</div>
+                        <ul>
+                            <li><a href="#">Elementary School</a></li>
+                            <li><a href="#">Junior High School</a></li>
+                            <li><a href="#">Senior High School</a></li>
+                            <li><a href="#">College Preparation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title subs">Subscription</div>
+                        <ul>
+                            <li><a href="#">Basic Package</a></li>
+                            <li><a href="#">Student Package</a></li>
+                            <li><a href="#">Premium Package</a></li>
+                            <li><a href="#">Team Package</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <div class="footer_title contact">Contact Us</div>
+                        <ul>
+                            <li>info@jeniusacademy.com</li>
+                            <li>+62 8111 2222 3333</li>
+                        </ul>
+                    </div>
+                    <div class="footer_bottom">
+                        <h3>© 2024 Jenius Academy. All rights reserved.</h3>
+                    </div>
+                </div>
+               
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
