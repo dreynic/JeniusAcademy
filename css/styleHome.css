@@ -9,11 +9,11 @@
 
 @font-face {
     font-family: 'Nunito Sans-Regular';
-    src: url("Font/NunitoSans-Regular.ttf");
+    src: url("../Font/NunitoSans-Regular.ttf");
 }
 @font-face {
     font-family: 'Nunito Sans-Black';
-    src: url("Font/NunitoSans-Black.ttf");
+    src: url("../Font/NunitoSans-Black.ttf");
 }
 
 * {
